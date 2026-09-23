@@ -1505,6 +1505,31 @@ main section[id] {
   transform: rotate(135deg) scale(1.15);
 }
 
+.service-cert {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 30px;
+  padding: 14px 18px;
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-sm);
+  background: #fff;
+}
+
+.service-cert img {
+  flex-shrink: 0;
+  width: clamp(160px, 22vw, 220px);
+  height: auto;
+  display: block;
+  border: 1px solid var(--line-2);
+}
+
+.service-cert-caption {
+  color: var(--paper-muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
 .services-cta {
   display: flex;
   align-items: center;
@@ -2972,6 +2997,16 @@ main section[id] {
     background: color-mix(in srgb, var(--red) 12%, transparent);
   }
 
+  .service-cert {
+    flex-direction: column;
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .service-cert img {
+    width: min(280px, 70vw);
+  }
+
   .services-cta {
     text-align: center;
     align-items: center;
@@ -3318,6 +3353,52 @@ main section[id] {
                 <li data-reveal>Historial claro de lo contratado y lo pendiente</li>
                 <li data-reveal>Atencion directa ante cualquier cambio o duda</li>
                 <li data-reveal>Comunicacion sin intermediarios innecesarios</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-row service-row--reverse">
+            <div class="service-media" data-reveal="media">
+              <img src="img/17.jpg" alt="Especialista con equipo de proteccion realizando limpieza forense y desinfeccion de una superficie" loading="lazy">
+            </div>
+            <div class="service-body" data-reveal-group>
+              <div class="service-body-head" data-reveal>
+                <span class="service-index" aria-hidden="true">04</span>
+                <span class="tag">Limpieza forense</span>
+              </div>
+              <h3 class="service-title" data-reveal>Limpieza forense y remediacion de riesgos biologicos</h3>
+              <p class="service-desc" data-reveal>Atendemos escenas traumaticas y forenses con protocolos de bioseguridad, discrecion total y personal certificado. Un servicio delicado que gestionamos con el respeto y la profesionalidad que la situacion requiere.</p>
+              <ul class="service-list">
+                <li data-reveal>Remediacion de escenarios traumaticos y forenses</li>
+                <li data-reveal>Sanitizacion y gestion de riesgos biologicos</li>
+                <li data-reveal>Limpieza de escenas del crimen y acumulacion</li>
+                <li data-reveal>Protocolos de bioseguridad y confidencialidad</li>
+                <li data-reveal>Personal certificado y equipo especializado</li>
+              </ul>
+              <div class="service-cert" data-reveal>
+                <img src="img/certificacion-limpieza-forense.jpg" alt="Certificacion en remediacion de escenarios traumaticos y forenses, sanitizacion de riesgos biologicos y limpieza de escenas del crimen" loading="lazy">
+                <span class="service-cert-caption">Certificacion vigente en remediacion forense y gestion de riesgos biologicos</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-row">
+            <div class="service-media" data-reveal="media">
+              <img src="img/18.jpg" alt="Tecnico fumigando una sala para el control de plagas urbanas" loading="lazy">
+            </div>
+            <div class="service-body" data-reveal-group>
+              <div class="service-body-head" data-reveal>
+                <span class="service-index" aria-hidden="true">05</span>
+                <span class="tag">Control de plagas</span>
+              </div>
+              <h3 class="service-title" data-reveal>Control de plagas urbanas</h3>
+              <p class="service-desc" data-reveal>Eliminamos y prevenimos plagas urbanas en hogares, oficinas y negocios con productos certificados y tecnicas seguras para personas y mascotas. Protegemos tus espacios sin interrumpir tu dia a dia.</p>
+              <ul class="service-list">
+                <li data-reveal>Fumigacion contra cucarachas, roedores, hormigas y mosquitos</li>
+                <li data-reveal>Diagnostico previo para identificar el origen de la plaga</li>
+                <li data-reveal>Productos certificados y seguros para personas y mascotas</li>
+                <li data-reveal>Planes preventivos periodicos para hogares y negocios</li>
+                <li data-reveal>Tecnicos capacitados en manejo integrado de plagas</li>
               </ul>
             </div>
           </article>
